@@ -1,0 +1,1274 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>SolPedPagamento</processId>
+    </processDefinitionPK>
+    <processDescription>Solicitações de Pedido de Pagamento</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>true</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Integrações.Compras</categoryId>
+    <managerEngineAllocationId>Grupo</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;w_COMPRADORES&lt;/Group&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Expediente_CNC_10as19</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>0</complementsLevel>
+    <notifyRequisitionerComplements>false</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>false</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Solicitações de Pedido de Pagamento</processId>
+      <version>1</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>0</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>1</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>true</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>12</positionX>
+      <positionY>0</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>12</sequence>
+      </processStatePK>
+      <stateName>Comprador - Tratar Solicitação</stateName>
+      <stateDescription>Comprador - Tratar Solicitação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;solicitante&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>780</positionX>
+      <positionY>52</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId>Expediente_CNC_10as19</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>36</sequence>
+      </processStatePK>
+      <stateName>GEF - Analisar Fiscal</stateName>
+      <stateDescription>GEF - Analisar Fiscal</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>32400</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;fiscalAprov&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>250</positionX>
+      <positionY>120</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId>Expediente_CNC_10as19</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>55</sequence>
+      </processStatePK>
+      <stateName>Gestor GSP - Validar Solicitação</stateName>
+      <stateDescription>Gestor GSP - Validar Solicitação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;chefia&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>480</positionX>
+      <positionY>51</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId>Expediente_CNC_10as19</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>105</sequence>
+      </processStatePK>
+      <stateName>Solicitante - Anexar Documento</stateName>
+      <stateDescription>Solicitante - Anexar Documento</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>1200</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;2&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>36000</allowanceAuthorityTime>
+      <frequenceAuthorityTime>36000</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>108</positionX>
+      <positionY>36</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId>Expediente_CNC_10as19</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>107</sequence>
+      </processStatePK>
+      <stateName>GEF - Analisar Financeiro</stateName>
+      <stateDescription>GEF - Analisar Financeiro</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>32400</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;financAprov&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>480</positionX>
+      <positionY>190</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId>Expediente_CNC_10as19</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Aprovar</stateName>
+      <stateDescription>Aprovar</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>210</positionX>
+      <positionY>310</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Reprovar e Cancelar Movimento</stateName>
+      <stateDescription>Reprovar e Cancelar Movimento</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>820</positionX>
+      <positionY>287</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>55</initialStateSequence>
+      <finalStateSequence>36</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>57</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>105</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>58</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>105</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>true</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <movementTitle></movementTitle>
+      <movementDescription></movementDescription>
+      <movementAccessLinkDescription></movementAccessLinkDescription>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>105</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>97</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>55</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>108</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>36</initialStateSequence>
+      <finalStateSequence>107</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>109</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>107</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>110</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>36</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>111</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>107</initialStateSequence>
+      <finalStateSequence>36</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>112</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>107</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>113</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	&#xd;
+    var atividade  = getValue(&quot;WKNumState&quot;);&#xd;
+    var comentario = getValue(&quot;WKUserComment&quot;); &#xd;
+&#xd;
+    if (atividade == 36) {&#xd;
+        if (comentario == &quot;&quot;) {&#xd;
+            throw &quot;Obrigatório informar um Complemento.&quot;&#xd;
+        }&#xd;
+    }&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeStateEntry</eventId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>&#xd;
+var SeqAtualizaWf = 105;&#xd;
+var SeqCancelaMov = 16;&#xd;
+var SeqFaturaMov = 22;&#xd;
+var SeqConcluiMov = 24;&#xd;
+var SeqGestorGSP = 55;&#xd;
+&#xd;
+function beforeStateEntry(sequenceId){&#xd;
+&#xd;
+	log.info(&quot;beforeStateEntry &quot;+sequenceId);&#xd;
+	&#xd;
+	//Define Respons?vel&#xd;
+    if (sequenceId == SeqAtualizaWf) {&#xd;
+    	atualizaEtapaWorkflow();&#xd;
+    }&#xd;
+    else if (sequenceId == SeqGestorGSP) {&#xd;
+    	selecionaAutorizador();&#xd;
+    	anexaDocumentos();&#xd;
+    	preencheDescritor();&#xd;
+    }&#xd;
+    else &#xd;
+		// De acordo com os estados finais ? passada a a??o a ser realizada no Movimento&#xd;
+	    if (sequenceId == SeqCancelaMov)&#xd;
+	    	AtualizaMovimento(&quot;Cancela&quot;);&#xd;
+		else if (sequenceId == SeqConcluiMov)&#xd;
+			AtualizaMovimento(&quot;Conclui&quot;);&#xd;
+		else if (sequenceId == SeqFaturaMov)&#xd;
+			AtualizaMovimento(&quot;Fatura&quot;);&#xd;
+	    &#xd;
+}&#xd;
+&#xd;
+function AtualizaMovimento(acaoMovimento){&#xd;
+	try &#xd;
+	{		&#xd;
+		log.info(&quot;AtualizaMovimento: &quot;+acaoMovimento);&#xd;
+		&#xd;
+		var codColigada = hAPI.getCardValue(&quot;CodColigada&quot;); &#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		var idFluig = getValue(&apos;WKNumProces&apos;);&#xd;
+		&#xd;
+		var cCompany = DatasetFactory.createConstraint(&quot;companyId&quot;, getValue(&quot;WKCompany&quot;), getValue(&quot;WKCompany&quot;), ConstraintType.MUST);	&#xd;
+		log.info(&quot;cCompany: &quot;+getValue(&quot;WKCompany&quot;));&#xd;
+		var cUser = DatasetFactory.createConstraint(&quot;colleagueId&quot;, getValue(&quot;WKUser&quot;), getValue(&quot;WKUser&quot;), ConstraintType.MUST);	&#xd;
+		log.info(&quot;cUser: &quot;+getValue(&quot;WKUser&quot;));&#xd;
+		var constraintsEmail = new Array(cCompany, cUser);&#xd;
+		var colleague = DatasetFactory.getDataset(&quot;colleague&quot;, null, constraintsEmail, null);&#xd;
+		&#xd;
+		var Email = colleague.getValue(0, &quot;mail&quot;);&#xd;
+		&#xd;
+		// Passa as chaves do Movimento e o servi?o que dever? ser chamado.&#xd;
+		var fields = new Array(codColigada, idMov, acaoMovimento , Email, idFluig);&#xd;
+		&#xd;
+		log.info(&quot;Passou: &quot;+acaoMovimento);&#xd;
+		&#xd;
+		var dsServiceMov = DatasetFactory.getDataset(&quot;wsDataSetServiceMov&quot;, fields, null, null);	&#xd;
+		&#xd;
+		if(dsServiceMov.getColumnsName()[0] == &quot;ERROR&quot;){&#xd;
+			throw dsServiceMov.getValue(0, &quot;ERROR&quot;);&#xd;
+		}&#xd;
+			&#xd;
+		log.info(&quot;Retorno Dataset: AtualizaMovimento: &quot;+ dsServiceMov);&#xd;
+	}&#xd;
+	catch (e)&#xd;
+	{&#xd;
+		log.error(e);&#xd;
+		throw e;&#xd;
+	}	&#xd;
+}&#xd;
+&#xd;
+&#xd;
+function selecionaAutorizador(){&#xd;
+	try {&#xd;
+		&#xd;
+		log.info(&quot;==========[ selecionaAutorizador Entrou ]========== &quot; );&#xd;
+		&#xd;
+	  	/////////////////////////////////////////////&#xd;
+	  	//		COLETANDO INFORMAÇÕES DE TMOV  	   //&#xd;
+	  	/////////////////////////////////////////////&#xd;
+		&#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		log.info(&quot;==========[ selecionaAutorizador idMov ]========== &quot; + idMov);&#xd;
+		&#xd;
+		// Preparacao de filtro para consulta&#xd;
+		var i1 = DatasetFactory.createConstraint(&quot;IDMOV&quot;, idMov, idMov, ConstraintType.MUST);&#xd;
+		var constraints = new Array(i1);&#xd;
+		log.info(&quot;==========[ selecionaAutorizador constraints idMov ]========== &quot; + constraints);&#xd;
+		&#xd;
+		var datasetReturned = DatasetFactory.getDataset(&quot;_RM_TMOV&quot;, null, constraints, null);&#xd;
+		log.info(&quot;==========[ selecionaAutorizador  datasetReturned _RM_TMOV]========== &quot; + datasetReturned);&#xd;
+		&#xd;
+		// Retirando o campo do resultado&#xd;
+        var codfilial = datasetReturned.getValue(0, &quot;CODFILIAL&quot;);&#xd;
+        log.info(&quot;==========[ selecionaAutorizador codfilial ]========== &quot; + codfilial);		&#xd;
+		&#xd;
+        		&#xd;
+	  	/////////////////////////////////////////////&#xd;
+	  	//		ATRIBUINDO GRUPO AUTORIZADOR 	   //&#xd;
+	  	/////////////////////////////////////////////&#xd;
+		&#xd;
+		&#xd;
+        if (codfilial == &quot;1&quot;) {&#xd;
+        	var fiscalAprov = &quot;Pool:Group:w_AnaFiscais_BSB&quot;;&#xd;
+        	var financAprov = &quot;Pool:Group:w_AnaFinanceiras_BSB&quot;;&#xd;
+        }&#xd;
+        else {&#xd;
+        	var fiscalAprov = &quot;Pool:Group:w_AnaFiscais_RIO&quot;;&#xd;
+        	var financAprov = &quot;Pool:Group:w_AnaFinanceiras_RIO&quot;;&#xd;
+        }&#xd;
+        &#xd;
+        log.info(&quot;==========[ selecionaAutorizador fiscalAprov ]========== &quot; + fiscalAprov);	&#xd;
+        log.info(&quot;==========[ selecionaAutorizador financAprov ]========== &quot; + financAprov);	&#xd;
+        &#xd;
+        hAPI.setCardValue(&quot;fiscalAprov&quot;, fiscalAprov);&#xd;
+    	hAPI.setCardValue(&quot;financAprov&quot;, financAprov);&#xd;
+		&#xd;
+	}&#xd;
+	&#xd;
+	catch (e) {&#xd;
+		log.error(e);&#xd;
+		throw e;&#xd;
+	}&#xd;
+	&#xd;
+} &#xd;
+&#xd;
+&#xd;
+function preencheDescritor(){&#xd;
+	try {&#xd;
+		&#xd;
+		log.info(&quot;==========[ preencheDescritor Entrou ]========== &quot; );&#xd;
+		&#xd;
+	  	/////////////////////////////////////////////&#xd;
+	  	//		COLETANDO INFORMAÇÕES DE TMOV  	   //&#xd;
+	  	/////////////////////////////////////////////&#xd;
+		&#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		log.info(&quot;==========[ preencheDescritor idMov ]========== &quot; + idMov);&#xd;
+		&#xd;
+		// Preparacao de filtro para consulta&#xd;
+		var i1 = DatasetFactory.createConstraint(&quot;IDMOV&quot;, idMov, idMov, ConstraintType.MUST);&#xd;
+		var constraints = new Array(i1);&#xd;
+		log.info(&quot;==========[ preencheDescritor constraints idMov ]========== &quot; + constraints);&#xd;
+		&#xd;
+		var datasetReturned = DatasetFactory.getDataset(&quot;_RM_DESCRITOR_TMOV&quot;, null, constraints, null);&#xd;
+		log.info(&quot;==========[ preencheDescritor  datasetReturned _RM_DESCRITOR_TMOV]========== &quot; + datasetReturned);&#xd;
+		&#xd;
+		// Retirando o campo do resultado&#xd;
+        var descritor = datasetReturned.getValue(0, &quot;DESCRITOR&quot;);&#xd;
+        log.info(&quot;==========[ preencheDescritor codfilial ]========== &quot; + descritor);		&#xd;
+		&#xd;
+	  	/////////////////////////////////////////////&#xd;
+	  	//			ATRIBUINDO NO FORMULARIO       //&#xd;
+	  	/////////////////////////////////////////////&#xd;
+        &#xd;
+        hAPI.setCardValue(&quot;descritor&quot;, descritor);&#xd;
+    	&#xd;
+		&#xd;
+	}&#xd;
+	&#xd;
+	catch (e) {&#xd;
+		log.error(e);&#xd;
+		throw e;&#xd;
+	}&#xd;
+	&#xd;
+} &#xd;
+&#xd;
+&#xd;
+function anexaDocumentos(){&#xd;
+	try {&#xd;
+		log.info(&quot;==========[ anexaDocumentos ENTROU ]==========&quot;);&#xd;
+		&#xd;
+		&#xd;
+	  	////////////////////////////////////////////////////////&#xd;
+	  	//			CRIANDO LISTA COM DOC. JÁ ANEXADOS        //&#xd;
+	  	///////////////////////////////////////////////////////&#xd;
+&#xd;
+		var attachments = hAPI.listAttachments(); // Retorna a lista de anexos do processo.&#xd;
+		var listaDocumentos = [];&#xd;
+		if (attachments != &quot;&quot;) {&#xd;
+			for (var i = 0; i &lt; attachments.size(); i++) {&#xd;
+				var attachment = attachments.get(i);&#xd;
+				var adicionar = listaDocumentos.push(attachment.getDocumentId());&#xd;
+			}&#xd;
+		} &#xd;
+		&#xd;
+		log.info(&quot;==========[ anexaDocumentos listaDocumentos ]==========&quot; + listaDocumentos);&#xd;
+		&#xd;
+&#xd;
+	  	/////////////////////////////////////////////////////////&#xd;
+	  	//			RASTREAMENTO DOS MOVIMENTOS PARA ANEXO    //&#xd;
+	  	////////////////////////////////////////////////////////&#xd;
+		&#xd;
+		&#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		log.info(&quot;==========[ anexaDocumentos idMov ]==========&quot;+idMov);&#xd;
+		&#xd;
+		// Rastreando movimentos&#xd;
+		var consultaRastreio = DatasetFactory.createConstraint(&quot;IDMOV&quot;, idMov, idMov, ConstraintType.MUST);&#xd;
+		var constraints = new Array(consultaRastreio);&#xd;
+		log.info(&quot;==========[ anexaDocumentos createDataset constraints ]========== &quot; + constraints);	&#xd;
+		&#xd;
+		// coleta dados do dataset, utlizando filtro&#xd;
+		var datasetRastreio = DatasetFactory.getDataset(&quot;_RM_RASTREIAMOVIMENTOS&quot;, null, constraints, null);&#xd;
+		log.info(&quot;==========[ anexaDocumentos createDataset datasetRastreio ] ========== &quot; + datasetRastreio);	 &#xd;
+		&#xd;
+		// Consultando a quantidade de arquivos retornados&#xd;
+		var quantMovimento   = datasetRastreio.rowsCount;&#xd;
+		log.info(&quot;==========[ anexaDocumentos quantidade ]========== &quot; + quantMovimento);&#xd;
+		&#xd;
+		// Retirando o campo do resultado&#xd;
+		var e;&#xd;
+		for (e = 0; e &lt; quantMovimento ; e++){&#xd;
+			log.info(&quot;==========[ for rastreamento entrou ]========== &quot;);&#xd;
+			var movimento = datasetRastreio.getValue(e, &quot;IDMOV&quot;);&#xd;
+			log.info(&quot;==========[ for rastreamento movimento ]========== &quot; + movimento);&#xd;
+			&#xd;
+			//Iniciando coleta para o laço que irá inserir os documentos de cada movimento&#xd;
+			var doc1 = DatasetFactory.createConstraint(&quot;IDMOV&quot;, movimento, movimento, ConstraintType.MUST);&#xd;
+			var constraints = new Array(doc1);&#xd;
+			log.info(&quot;==========[ anexaDocumentos createDataset constraints ]========== &quot; + constraints);&#xd;
+				    &#xd;
+			// coleta dados do dataset, utlizando filtro&#xd;
+			var datasetDocumento = DatasetFactory.getDataset(&quot;_RM_GED_TMOV&quot;, null, constraints, null);&#xd;
+			log.info(&quot;==========[ anexaDocumentos createDataset datasetReturned ] ========== &quot; + datasetDocumento);	 &#xd;
+			&#xd;
+			// Consultando a quantidade de arquivos retornados&#xd;
+			var quant   = datasetDocumento.rowsCount;&#xd;
+			log.info(&quot;==========[ anexaDocumentos quant ]========== &quot; + quant);&#xd;
+			&#xd;
+			//Retirando o campo do resultado&#xd;
+			var i;&#xd;
+			for (i = 0; i &lt; quant ; i++){&#xd;
+				log.info(&quot;==========[ anexaDocumentos FOR entrou ]========== &quot;);&#xd;
+				var documentId = datasetDocumento.getValue(i, &quot;CODDOCUMENTO&quot;);&#xd;
+				log.info(&quot;==========[ anexaDocumentos documentId ]========== &quot; + documentId);&#xd;
+				&#xd;
+				&#xd;
+				var existeDoc = false;&#xd;
+				&#xd;
+				var d;&#xd;
+				for (d = 0; d &lt;  listaDocumentos.length; d++) {&#xd;
+					 var documento = listaDocumentos[d];&#xd;
+					 if (documento == documentId) {&#xd;
+						 existeDoc = true;&#xd;
+					 }&#xd;
+					 else {&#xd;
+						 continue;&#xd;
+					 }&#xd;
+				}&#xd;
+					&#xd;
+				if (listaDocumentos == &quot;&quot; || existeDoc == false ) { // Quando não exitir nada ou não existir o documento o mesmo será anexado&#xd;
+					log.info(&quot;==========[ anexaDocumentos if item ENTROU listaDocumentos ]========== &quot; + listaDocumentos);&#xd;
+					log.info(&quot;==========[ anexaDocumentos if item ENTROU documentId ]========== &quot; + documentId);&#xd;
+					log.info(&quot;==========[ anexaDocumentos if item ENTROU existeDoc ]========== &quot; + existeDoc);&#xd;
+					&#xd;
+					log.info(&quot;==========[ anexaDocumentos if item ENTROU attachDocument ]========== &quot; + documentId);&#xd;
+					hAPI.attachDocument(documentId); // Comando para inserir documentos em anexo ao formulário.&#xd;
+&#xd;
+				}&#xd;
+				else {&#xd;
+					continue;&#xd;
+				}&#xd;
+			}&#xd;
+			&#xd;
+			&#xd;
+			}		&#xd;
+	}&#xd;
+	&#xd;
+	catch (e)&#xd;
+	{&#xd;
+		log.error(e);&#xd;
+		throw e;&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+&#xd;
+function atualizaEtapaWorkflow(){&#xd;
+	try {&#xd;
+		&#xd;
+		log.info(&quot;==========[ atualizaEtapaWorkflow ENTROU ]==========&quot;);&#xd;
+		&#xd;
+		var processo = getValue(&quot;WKNumProces&quot;);     //Recupera o numero da solicitação&#xd;
+		var requisitante = getValue(&quot;WKUser&quot;);		//Recupera o usuário corrente associado a atividade&#xd;
+			&#xd;
+		hAPI.setCardValue(&quot;n_solicitacao&quot;, processo);&#xd;
+		hAPI.setCardValue(&quot;solicitante&quot;, requisitante);&#xd;
+		    &#xd;
+		// Preparacao de filtro para consulta&#xd;
+		var c1 = DatasetFactory.createConstraint(&quot;SOLICITANTE&quot;, requisitante, requisitante, ConstraintType.MUST);&#xd;
+		var constraints = new Array(c1);&#xd;
+		log.info(&quot;==========[ atualizaEtapaWorkflow createDataset constraints ]========== &quot; + constraints);&#xd;
+			    &#xd;
+		// coleta dados do dataset, utlizando filtro&#xd;
+		var datasetReturned = DatasetFactory.getDataset(&quot;_RM_SOLICITANTE_CHEFIA&quot;, null, constraints, null);&#xd;
+		log.info(&quot;==========[ atualizaEtapaWorkflow createDataset datasetReturned ] ========== &quot; + datasetReturned);	  &#xd;
+			    &#xd;
+		// Gravando valores de retorno&#xd;
+		var retorno = datasetReturned.values;&#xd;
+		log.info(&quot;==========[ atualizaEtapaWorkflow createDataset dataset ]========== &quot; + retorno);&#xd;
+			&#xd;
+		// Retirando o campo do resultado&#xd;
+		var chefe = datasetReturned.getValue(0, &quot;CHEFIA&quot;);&#xd;
+		log.info(&quot;==========[ atualizaEtapaWorkflow createDataset chefe ]========== &quot; + chefe);&#xd;
+			&#xd;
+		// Gravando retorno		&#xd;
+		hAPI.setCardValue(&quot;chefia&quot;, chefe);&#xd;
+		}&#xd;
+	&#xd;
+	catch (e)&#xd;
+	{&#xd;
+		log.error(e);&#xd;
+		throw e;&#xd;
+	}&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list>
+    <AdvancedProcessProperties>
+      <advancedProcessPropertiesPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <propertyId>AutomaticTasks</propertyId>
+        <version>1</version>
+      </advancedProcessPropertiesPK>
+      <propertieValue>4</propertieValue>
+    </AdvancedProcessProperties>
+  </list>
+  <list>
+    <SwimLane>
+      <color>A7FCC0</color>
+      <height>109</height>
+      <width>496</width>
+      <positionX>0</positionX>
+      <positionY>266</positionY>
+      <stateName>Aprovado</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FF9B9B</color>
+      <height>109</height>
+      <width>446</width>
+      <positionX>495</positionX>
+      <positionY>266</positionY>
+      <stateName>Reprovado</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>8CC6FF</color>
+      <height>267</height>
+      <width>941</width>
+      <positionX>0</positionX>
+      <positionY>0</positionY>
+      <stateName>GSP/GEF </stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>90</positionX>
+      <positionY>280</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <componGrafSequence>26</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Aprovado</stateName>
+    </ProcessComponGraf>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>570</positionX>
+      <positionY>280</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <componGrafSequence>30</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Reprova e Cancela Movimento</stateName>
+    </ProcessComponGraf>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>72</positionX>
+      <positionY>135</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <componGrafSequence>79</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Usuário do movimento do RM</stateName>
+    </ProcessComponGraf>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>630</positionX>
+      <positionY>120</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <componGrafSequence>83</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Autorizador do usuário do movimento</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>27</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>26</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+    </ProcessLinkAssoc>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>31</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>30</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+    </ProcessLinkAssoc>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>80</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>79</initialStateSequence>
+      <finalStateSequence>105</finalStateSequence>
+    </ProcessLinkAssoc>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>84</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>83</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>416</positionX>
+      <positionY>158</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>834</positionX>
+      <positionY>22</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>532</positionX>
+      <positionY>22</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>159</positionX>
+      <positionY>23</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>244</positionX>
+      <positionY>23</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>529</positionX>
+      <positionY>23</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>110</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>403</positionX>
+      <positionY>127</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>111</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>303</positionX>
+      <positionY>229</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list>
+    <ExtendedPropertyField>
+      <extendedPropertyFieldPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <stateSequence>0</stateSequence>
+        <propertyName>AutomaticTasks</propertyName>
+      </extendedPropertyFieldPK>
+      <propertyType>0</propertyType>
+      <propertyDescription>AutomaticTasks</propertyDescription>
+      <propertyValue>4</propertyValue>
+      <isDefaultProperty>false</isDefaultProperty>
+    </ExtendedPropertyField>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>
