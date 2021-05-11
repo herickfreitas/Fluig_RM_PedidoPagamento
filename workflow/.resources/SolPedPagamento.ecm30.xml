@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Solicitações de Pedido de Pagamento</processId>
-      <version>1</version>
+      <version>2</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>0</formId>
@@ -1012,19 +1012,19 @@ function atualizaEtapaWorkflow(){&#xd;
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
         <propertyId>AutomaticTasks</propertyId>
-        <version>1</version>
+        <version>2</version>
       </advancedProcessPropertiesPK>
       <propertieValue>4</propertieValue>
     </AdvancedProcessProperties>
   </list>
   <list>
     <SwimLane>
-      <color>A7FCC0</color>
+      <color>FF9B9B</color>
       <height>109</height>
-      <width>496</width>
-      <positionX>0</positionX>
+      <width>446</width>
+      <positionX>495</positionX>
       <positionY>266</positionY>
-      <stateName>Aprovado</stateName>
+      <stateName>Reprovado</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -1035,12 +1035,12 @@ function atualizaEtapaWorkflow(){&#xd;
       </swimLanePK>
     </SwimLane>
     <SwimLane>
-      <color>FF9B9B</color>
+      <color>A7FCC0</color>
       <height>109</height>
-      <width>446</width>
-      <positionX>495</positionX>
+      <width>496</width>
+      <positionX>0</positionX>
       <positionY>266</positionY>
-      <stateName>Reprovado</stateName>
+      <stateName>Aprovado</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -1164,7 +1164,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>37</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1175,7 +1175,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>50</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1186,7 +1186,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>50</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1197,7 +1197,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>59</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1208,7 +1208,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>59</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1219,7 +1219,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>59</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -1230,7 +1230,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>110</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1241,7 +1241,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <linkSequence>111</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1255,7 +1255,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <extendedPropertyFieldPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>1</version>
+        <version>2</version>
         <stateSequence>0</stateSequence>
         <propertyName>AutomaticTasks</propertyName>
       </extendedPropertyFieldPK>
