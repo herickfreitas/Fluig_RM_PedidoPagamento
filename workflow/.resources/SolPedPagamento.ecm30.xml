@@ -7,7 +7,7 @@
     <processDescription>Solicitações de Pedido de Pagamento</processDescription>
     <instruction></instruction>
     <active>true</active>
-    <publicProcess>true</publicProcess>
+    <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
     <categoryId>Integrações.Compras</categoryId>
     <managerEngineAllocationId>Grupo</managerEngineAllocationId>
@@ -15,7 +15,7 @@
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
     <baseMonth>0</baseMonth>
-    <periodId>Expediente_CNC_10as19</periodId>
+    <periodId>Default</periodId>
     <uniqueCardVersion>false</uniqueCardVersion>
     <keyWord></keyWord>
     <complementsLevel>0</complementsLevel>
@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Solicitações de Pedido de Pagamento</processId>
-      <version>2</version>
+      <version>4</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>0</formId>
@@ -77,7 +77,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>12</positionX>
-      <positionY>0</positionY>
+      <positionY>10</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -128,7 +128,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>780</positionX>
-      <positionY>52</positionY>
+      <positionY>270</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -136,7 +136,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>true</inhibitTransfer>
-      <periodId>Expediente_CNC_10as19</periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -156,8 +156,8 @@
         <version>1</version>
         <sequence>36</sequence>
       </processStatePK>
-      <stateName>GEF - Analisar Fiscal</stateName>
-      <stateDescription>GEF - Analisar Fiscal</stateDescription>
+      <stateName>GEF Fiscal - Analisar </stateName>
+      <stateDescription>GEF Fiscal - Analisar </stateDescription>
       <instruction></instruction>
       <deadlineTime>32400</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
@@ -179,8 +179,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>250</positionX>
-      <positionY>120</positionY>
+      <positionX>310</positionX>
+      <positionY>250</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -188,7 +188,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>true</inhibitTransfer>
-      <periodId>Expediente_CNC_10as19</periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -232,7 +232,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>480</positionX>
-      <positionY>51</positionY>
+      <positionY>150</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -240,7 +240,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>true</inhibitTransfer>
-      <periodId>Expediente_CNC_10as19</periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -260,8 +260,8 @@
         <version>1</version>
         <sequence>105</sequence>
       </processStatePK>
-      <stateName>Solicitante - Anexar Documento</stateName>
-      <stateDescription>Solicitante - Anexar Documento</stateDescription>
+      <stateName>Comprador - Anexar Documento</stateName>
+      <stateDescription>Comprador - Anexar Documento</stateDescription>
       <instruction></instruction>
       <deadlineTime>1200</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
@@ -284,7 +284,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>108</positionX>
-      <positionY>36</positionY>
+      <positionY>46</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -292,7 +292,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>true</inhibitTransfer>
-      <periodId>Expediente_CNC_10as19</periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -312,8 +312,8 @@
         <version>1</version>
         <sequence>107</sequence>
       </processStatePK>
-      <stateName>GEF - Analisar Financeiro</stateName>
-      <stateDescription>GEF - Analisar Financeiro</stateDescription>
+      <stateName>GEF Financeiro - Aprovar</stateName>
+      <stateDescription>GEF Financeiro - Aprovar</stateDescription>
       <instruction></instruction>
       <deadlineTime>32400</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
@@ -336,7 +336,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>480</positionX>
-      <positionY>190</positionY>
+      <positionY>320</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -344,7 +344,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>true</inhibitTransfer>
-      <periodId>Expediente_CNC_10as19</periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -356,6 +356,187 @@
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
       <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>117</sequence>
+      </processStatePK>
+      <stateName>Gestor CC - Direcionar solicitação</stateName>
+      <stateDescription>Gestor CC - Direcionar solicitação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;gestorcc&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>440</positionX>
+      <positionY>50</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>119</sequence>
+      </processStatePK>
+      <stateName>Ponto focal - Serviço a contento?</stateName>
+      <stateDescription>Ponto focal - Serviço a contento?</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;pontoFocal&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>600</positionX>
+      <positionY>50</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>121</sequence>
+      </processStatePK>
+      <stateName>Gestor CC - Validar solicitação</stateName>
+      <stateDescription>Gestor CC - Validar solicitação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;gestorcc&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>780</positionX>
+      <positionY>50</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <sequence>114</sequence>
+      </processStatePK>
+      <stateName>Avançar processo</stateName>
+      <stateDescription>Avançar processo</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>310</positionX>
+      <positionY>40</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
     </ProcessState>
     <ProcessState>
       <processStatePK>
@@ -387,7 +568,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>210</positionX>
-      <positionY>310</positionY>
+      <positionY>464</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -433,8 +614,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>820</positionX>
-      <positionY>287</positionY>
+      <positionX>810</positionX>
+      <positionY>441</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -452,7 +633,32 @@
       <digitalSignature>false</digitalSignature>
     </ProcessState>
   </list>
-  <list/>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>4</version>
+        <sequence>114</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>117</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>4</version>
+        <sequence>114</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>55</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+  </list>
   <list>
     <ProcessLink>
       <processLinkPK>
@@ -476,66 +682,12 @@
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
         <version>1</version>
-        <linkSequence>50</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>12</initialStateSequence>
-      <finalStateSequence>55</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>1</version>
         <linkSequence>57</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>2</initialStateSequence>
       <finalStateSequence>105</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>1</version>
-        <linkSequence>58</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>105</initialStateSequence>
-      <finalStateSequence>55</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>true</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>1</version>
-        <linkSequence>59</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>105</initialStateSequence>
-      <finalStateSequence>55</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -649,7 +801,194 @@
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
         <version>1</version>
-        <linkSequence>113</linkSequence>
+        <linkSequence>115</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>105</initialStateSequence>
+      <finalStateSequence>114</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>true</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>116</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>114</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Serviço? Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>118</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>114</initialStateSequence>
+      <finalStateSequence>117</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Serviço? Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>120</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>117</initialStateSequence>
+      <finalStateSequence>119</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>122</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>119</initialStateSequence>
+      <finalStateSequence>121</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>123</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>121</initialStateSequence>
+      <finalStateSequence>55</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>124</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>105</initialStateSequence>
+      <finalStateSequence>114</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>125</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>117</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>126</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>119</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>127</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>121</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>128</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>114</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>1</version>
+        <linkSequence>131</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
@@ -697,6 +1036,8 @@ var SeqCancelaMov = 16;&#xd;
 var SeqFaturaMov = 22;&#xd;
 var SeqConcluiMov = 24;&#xd;
 var SeqGestorGSP = 55;&#xd;
+var SeqGatweyServ = 114;&#xd;
+&#xd;
 &#xd;
 function beforeStateEntry(sequenceId){&#xd;
 &#xd;
@@ -705,8 +1046,10 @@ function beforeStateEntry(sequenceId){&#xd;
 	//Define Respons?vel&#xd;
     if (sequenceId == SeqAtualizaWf) {&#xd;
     	atualizaEtapaWorkflow();&#xd;
+    	&#xd;
     }&#xd;
-    else if (sequenceId == SeqGestorGSP) {&#xd;
+    //else if (sequenceId == SeqGestorGSP) {&#xd;
+    else if (sequenceId == SeqGatweyServ) {&#xd;
     	selecionaAutorizador();&#xd;
     	anexaDocumentos();&#xd;
     	preencheDescritor();&#xd;
@@ -996,6 +1339,81 @@ function atualizaEtapaWorkflow(){&#xd;
 			&#xd;
 		// Gravando retorno		&#xd;
 		hAPI.setCardValue(&quot;chefia&quot;, chefe);&#xd;
+		&#xd;
+		/////////////////////////////////////////////&#xd;
+	  	//		COLETANDO VALOR E C. CUSTO  	   //&#xd;
+	  	/////////////////////////////////////////////&#xd;
+		&#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry  idMov ]========== &quot; + idMov);&#xd;
+		&#xd;
+		// Preparacao de filtro para consulta&#xd;
+		var i1 = DatasetFactory.createConstraint(&quot;IDMOV&quot;, idMov, idMov, ConstraintType.MUST);&#xd;
+		var constraints = new Array(i1);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow constraints idMov ]========== &quot; + constraints);&#xd;
+		&#xd;
+		var datasetReturned = DatasetFactory.getDataset(&quot;_RM_IDMOV_CCUSTO&quot;, null, constraints, null);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry  atualizaEtapaWorkflow datasetReturned _RM_IDMOV_CCUSTO]========== &quot; + datasetReturned);&#xd;
+		&#xd;
+		// Retirando o campo do resultado&#xd;
+        var ccusto = datasetReturned.getValue(0, &quot;CODCCUSTO&quot;);&#xd;
+        log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow ccusto ]========== &quot; + ccusto);&#xd;
+				&#xd;
+		&#xd;
+        // Rodando novo dataset para coletar responsável do centro de custo&#xd;
+        var a1 = DatasetFactory.createConstraint(&quot;CODCCUSTO&quot;, ccusto, ccusto, ConstraintType.MUST);&#xd;
+        var constraints = new Array(a1);&#xd;
+        log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow constraints ]========== &quot; + constraints);&#xd;
+		&#xd;
+		&#xd;
+	  	/////////////////////////////////&#xd;
+	  	//		ATRIBUINDO GESTORCC	   //&#xd;
+	  	/////////////////////////////////&#xd;
+		&#xd;
+        // Executando chamada de dataset&#xd;
+        var datasetReturn = DatasetFactory.getDataset(&quot;_RM_GESTOR_CENTRO_CUSTO&quot;, null, constraints, null);&#xd;
+		&#xd;
+		// Retirando o campo do resultado&#xd;
+        var responsavel = datasetReturn.getValue(0, &quot;RESPONSAVEL&quot;);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow responsavel para gestorcc ]========== &quot; + responsavel); &#xd;
+    	&#xd;
+    	// Gravando retorno no formulário		&#xd;
+		hAPI.setCardValue(&quot;gestorcc&quot;, responsavel);&#xd;
+		&#xd;
+		&#xd;
+		/////////////////////////////////&#xd;
+	  	//		POSSUI SERVIÇO??  	   //&#xd;
+	  	/////////////////////////////////&#xd;
+		&#xd;
+		var idMov = hAPI.getCardValue(&quot;IdMov&quot;);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry  idMov ]========== &quot; + idMov);&#xd;
+		&#xd;
+		// Preparacao de filtro para consulta&#xd;
+		var filtro = DatasetFactory.createConstraint(&quot;IDMOV&quot;, idMov, idMov, ConstraintType.MUST);&#xd;
+		var constraints = new Array(filtro);&#xd;
+		log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow POSSUI SERVIÇO?? constraints idMov ]========== &quot; + constraints);&#xd;
+		&#xd;
+        // Executando chamada de dataset&#xd;
+        var datasetReturnItensPP = DatasetFactory.getDataset(&quot;_RM_ITENS_PP&quot;, null, constraints, null);&#xd;
+        &#xd;
+        var serv = &apos;nao&apos;;&#xd;
+        var quantidade   = datasetReturnItensPP.rowsCount;&#xd;
+        log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow quantidadeItens ]========== &quot; + quantidade);&#xd;
+        &#xd;
+        for (i = 0; i &lt; quantidade; i++ ) {&#xd;
+        	var tipo = datasetReturnItensPP.getValue(i, &quot;TIPO&quot;);&#xd;
+        	log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow tipo ]========== &quot; + tipo);&#xd;
+        	if (tipo == &apos;S&apos;){&#xd;
+        		serv=&apos;sim&apos;;&#xd;
+        	}&#xd;
+        }&#xd;
+        &#xd;
+        log.info(&quot;==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow possuiServico ]========== &quot; + serv);&#xd;
+        &#xd;
+    	// Gravando retorno no formulário		&#xd;
+		hAPI.setCardValue(&quot;possuiServico&quot;, serv);&#xd;
+        &#xd;
+		&#xd;
 		}&#xd;
 	&#xd;
 	catch (e)&#xd;
@@ -1012,19 +1430,19 @@ function atualizaEtapaWorkflow(){&#xd;
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
         <propertyId>AutomaticTasks</propertyId>
-        <version>2</version>
+        <version>4</version>
       </advancedProcessPropertiesPK>
       <propertieValue>4</propertieValue>
     </AdvancedProcessProperties>
   </list>
   <list>
     <SwimLane>
-      <color>FF9B9B</color>
+      <color>A7FCC0</color>
       <height>109</height>
-      <width>446</width>
-      <positionX>495</positionX>
-      <positionY>266</positionY>
-      <stateName>Reprovado</stateName>
+      <width>496</width>
+      <positionX>0</positionX>
+      <positionY>420</positionY>
+      <stateName>Aprovado</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -1035,12 +1453,12 @@ function atualizaEtapaWorkflow(){&#xd;
       </swimLanePK>
     </SwimLane>
     <SwimLane>
-      <color>A7FCC0</color>
-      <height>109</height>
-      <width>496</width>
+      <color>8CC6FF</color>
+      <height>421</height>
+      <width>941</width>
       <positionX>0</positionX>
-      <positionY>266</positionY>
-      <stateName>Aprovado</stateName>
+      <positionY>0</positionY>
+      <stateName>GSP/GEF </stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -1051,12 +1469,12 @@ function atualizaEtapaWorkflow(){&#xd;
       </swimLanePK>
     </SwimLane>
     <SwimLane>
-      <color>8CC6FF</color>
-      <height>267</height>
-      <width>941</width>
-      <positionX>0</positionX>
-      <positionY>0</positionY>
-      <stateName>GSP/GEF </stateName>
+      <color>FF9B9B</color>
+      <height>109</height>
+      <width>446</width>
+      <positionX>495</positionX>
+      <positionY>420</positionY>
+      <stateName>Reprovado</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -1071,7 +1489,7 @@ function atualizaEtapaWorkflow(){&#xd;
     <ProcessComponGraf>
       <componType>1</componType>
       <positionX>90</positionX>
-      <positionY>280</positionY>
+      <positionY>434</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
@@ -1083,7 +1501,7 @@ function atualizaEtapaWorkflow(){&#xd;
     <ProcessComponGraf>
       <componType>1</componType>
       <positionX>570</positionX>
-      <positionY>280</positionY>
+      <positionY>434</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
@@ -1095,7 +1513,7 @@ function atualizaEtapaWorkflow(){&#xd;
     <ProcessComponGraf>
       <componType>1</componType>
       <positionX>72</positionX>
-      <positionY>135</positionY>
+      <positionY>145</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
@@ -1103,18 +1521,6 @@ function atualizaEtapaWorkflow(){&#xd;
         <componGrafSequence>79</componGrafSequence>
       </processComponGrafPK>
       <stateName>Usuário do movimento do RM</stateName>
-    </ProcessComponGraf>
-    <ProcessComponGraf>
-      <componType>1</componType>
-      <positionX>630</positionX>
-      <positionY>120</positionY>
-      <processComponGrafPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>1</version>
-        <componGrafSequence>83</componGrafSequence>
-      </processComponGrafPK>
-      <stateName>Autorizador do usuário do movimento</stateName>
     </ProcessComponGraf>
   </list>
   <list>
@@ -1148,105 +1554,216 @@ function atualizaEtapaWorkflow(){&#xd;
       <initialStateSequence>79</initialStateSequence>
       <finalStateSequence>105</finalStateSequence>
     </ProcessLinkAssoc>
-    <ProcessLinkAssoc>
-      <processLinkAssocPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>1</version>
-        <linkSequence>84</linkSequence>
-      </processLinkAssocPK>
-      <initialStateSequence>83</initialStateSequence>
-      <finalStateSequence>55</finalStateSequence>
-    </ProcessLinkAssoc>
   </list>
   <list>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>2</version>
+        <version>4</version>
         <linkSequence>37</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>416</positionX>
-      <positionY>158</positionY>
+      <positionX>503</positionX>
+      <positionY>284</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>2</version>
-        <linkSequence>50</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>834</positionX>
-      <positionY>22</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>2</version>
-        <linkSequence>50</linkSequence>
-        <bendSequence>2</bendSequence>
-      </processLinkBendPK>
-      <positionX>532</positionX>
-      <positionY>22</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>2</version>
-        <linkSequence>59</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>159</positionX>
-      <positionY>23</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>2</version>
-        <linkSequence>59</linkSequence>
-        <bendSequence>2</bendSequence>
-      </processLinkBendPK>
-      <positionX>244</positionX>
-      <positionY>23</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>2</version>
-        <linkSequence>59</linkSequence>
-        <bendSequence>3</bendSequence>
-      </processLinkBendPK>
-      <positionX>529</positionX>
-      <positionY>23</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>SolPedPagamento</processId>
-        <version>2</version>
+        <version>4</version>
         <linkSequence>110</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>403</positionX>
-      <positionY>127</positionY>
+      <positionX>362</positionX>
+      <positionY>192</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>2</version>
+        <version>4</version>
         <linkSequence>111</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>303</positionX>
-      <positionY>229</positionY>
+      <positionX>362</positionX>
+      <positionY>355</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>116</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>341</positionX>
+      <positionY>191</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>123</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>836</positionX>
+      <positionY>192</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>124</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>257</positionX>
+      <positionY>168</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>125</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>493</positionX>
+      <positionY>19</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>125</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>924</positionX>
+      <positionY>19</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>125</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>924</positionX>
+      <positionY>305</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>126</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>660</positionX>
+      <positionY>20</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>126</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>916</positionX>
+      <positionY>20</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>126</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>916</positionX>
+      <positionY>164</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>126</linkSequence>
+        <bendSequence>4</bendSequence>
+      </processLinkBendPK>
+      <positionX>916</positionX>
+      <positionY>311</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>127</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>921</positionX>
+      <positionY>91</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>127</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>921</positionX>
+      <positionY>311</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>128</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>832</positionX>
+      <positionY>401</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>128</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>963</positionX>
+      <positionY>401</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>128</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>963</positionX>
+      <positionY>12</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SolPedPagamento</processId>
+        <version>4</version>
+        <linkSequence>128</linkSequence>
+        <bendSequence>4</bendSequence>
+      </processLinkBendPK>
+      <positionX>340</positionX>
+      <positionY>12</positionY>
     </ProcessLinkBend>
   </list>
   <list/>
@@ -1255,7 +1772,7 @@ function atualizaEtapaWorkflow(){&#xd;
       <extendedPropertyFieldPK>
         <companyId>1</companyId>
         <processId>SolPedPagamento</processId>
-        <version>2</version>
+        <version>4</version>
         <stateSequence>0</stateSequence>
         <propertyName>AutomaticTasks</propertyName>
       </extendedPropertyFieldPK>
@@ -1268,7 +1785,107 @@ function atualizaEtapaWorkflow(){&#xd;
   <list/>
   <list/>
   <list/>
+  <list>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>55</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description>36</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>55</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description>12</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>117</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description>119</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>117</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description>12</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>119</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description>121</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>119</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description>12</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>121</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description>55</description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>SolPedPagamento</processId>
+      <processVersion>4</processVersion>
+      <stateSequence>121</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description>12</description>
+    </ProcessAppConfiguration>
+  </list>
   <list/>
-  <list/>
-  <list/>
+  <list>
+    <ConditionProcessAutomaticRules>
+      <sequence>114</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>possuiServico</field>
+      <value>sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>114</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>possuiServico</field>
+      <value>nao</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+  </list>
 </list>

@@ -4,6 +4,8 @@ var SeqCancelaMov = 16;
 var SeqFaturaMov = 22;
 var SeqConcluiMov = 24;
 var SeqGestorGSP = 55;
+var SeqGatweyServ = 114;
+
 
 function beforeStateEntry(sequenceId){
 
@@ -12,8 +14,10 @@ function beforeStateEntry(sequenceId){
 	//Define Respons?vel
     if (sequenceId == SeqAtualizaWf) {
     	atualizaEtapaWorkflow();
+    	
     }
-    else if (sequenceId == SeqGestorGSP) {
+    //else if (sequenceId == SeqGestorGSP) {
+    else if (sequenceId == SeqGatweyServ) {
     	selecionaAutorizador();
     	anexaDocumentos();
     	preencheDescritor();
@@ -303,6 +307,81 @@ function atualizaEtapaWorkflow(){
 			
 		// Gravando retorno		
 		hAPI.setCardValue("chefia", chefe);
+		
+		/////////////////////////////////////////////
+	  	//		COLETANDO VALOR E C. CUSTO  	   //
+	  	/////////////////////////////////////////////
+		
+		var idMov = hAPI.getCardValue("IdMov");
+		log.info("==========[ SolPedPagamento.beforeStateEntry  idMov ]========== " + idMov);
+		
+		// Preparacao de filtro para consulta
+		var i1 = DatasetFactory.createConstraint("IDMOV", idMov, idMov, ConstraintType.MUST);
+		var constraints = new Array(i1);
+		log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow constraints idMov ]========== " + constraints);
+		
+		var datasetReturned = DatasetFactory.getDataset("_RM_IDMOV_CCUSTO", null, constraints, null);
+		log.info("==========[ SolPedPagamento.beforeStateEntry  atualizaEtapaWorkflow datasetReturned _RM_IDMOV_CCUSTO]========== " + datasetReturned);
+		
+		// Retirando o campo do resultado
+        var ccusto = datasetReturned.getValue(0, "CODCCUSTO");
+        log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow ccusto ]========== " + ccusto);
+				
+		
+        // Rodando novo dataset para coletar responsável do centro de custo
+        var a1 = DatasetFactory.createConstraint("CODCCUSTO", ccusto, ccusto, ConstraintType.MUST);
+        var constraints = new Array(a1);
+        log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow constraints ]========== " + constraints);
+		
+		
+	  	/////////////////////////////////
+	  	//		ATRIBUINDO GESTORCC	   //
+	  	/////////////////////////////////
+		
+        // Executando chamada de dataset
+        var datasetReturn = DatasetFactory.getDataset("_RM_GESTOR_CENTRO_CUSTO", null, constraints, null);
+		
+		// Retirando o campo do resultado
+        var responsavel = datasetReturn.getValue(0, "RESPONSAVEL");
+		log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow responsavel para gestorcc ]========== " + responsavel); 
+    	
+    	// Gravando retorno no formulário		
+		hAPI.setCardValue("gestorcc", responsavel);
+		
+		
+		/////////////////////////////////
+	  	//		POSSUI SERVIÇO??  	   //
+	  	/////////////////////////////////
+		
+		var idMov = hAPI.getCardValue("IdMov");
+		log.info("==========[ SolPedPagamento.beforeStateEntry  idMov ]========== " + idMov);
+		
+		// Preparacao de filtro para consulta
+		var filtro = DatasetFactory.createConstraint("IDMOV", idMov, idMov, ConstraintType.MUST);
+		var constraints = new Array(filtro);
+		log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow POSSUI SERVIÇO?? constraints idMov ]========== " + constraints);
+		
+        // Executando chamada de dataset
+        var datasetReturnItensPP = DatasetFactory.getDataset("_RM_ITENS_PP", null, constraints, null);
+        
+        var serv = 'nao';
+        var quantidade   = datasetReturnItensPP.rowsCount;
+        log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow quantidadeItens ]========== " + quantidade);
+        
+        for (i = 0; i < quantidade; i++ ) {
+        	var tipo = datasetReturnItensPP.getValue(i, "TIPO");
+        	log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow tipo ]========== " + tipo);
+        	if (tipo == 'S'){
+        		serv='sim';
+        	}
+        }
+        
+        log.info("==========[ SolPedPagamento.beforeStateEntry atualizaEtapaWorkflow possuiServico ]========== " + serv);
+        
+    	// Gravando retorno no formulário		
+		hAPI.setCardValue("possuiServico", serv);
+        
+		
 		}
 	
 	catch (e)

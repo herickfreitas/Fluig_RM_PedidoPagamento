@@ -14,6 +14,7 @@
   <script src="/portal/resources/js/mustache/mustache-min.js"></script>
   <script src="/portal/resources/style-guide/js/fluig-style-guide.min.js"></script>
   <script type="text/javascript" src="numeral.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
 
 </head>
 
@@ -31,6 +32,63 @@
             <input type='hidden' name='TipoAprovacao' id='TipoAprovacao' />
             <input type='hidden' name='NSeqItmMov' id='NSeqItmMov' />
             <input type='hidden' name='IdentificadorFluig' id='IdentificadorFluig' />
+            <input type='hidden' name='possuiServico' id='possuiServico' />
+            <input type='hidden' name="gestorcc" id="gestorcc" />
+
+            
+            <div class="row form-group" id="dvCustomizada">
+              <div class="col-xs-6 col-md-2">
+                <label class="control-label" id="lblsolicitacao">Número Solicitação</label>
+                <input class="form-control" type="text" name="n_solicitacao" id="n_solicitacao" readonly="on" />
+              </div>
+              <div class="col-xs-6 col-md-2" id="divSolicitante">
+                <label class='control-label' id='lblsolicitante'>Solicitante</label>
+                <input class="form-control" type="text" name="solicitante" id="solicitante" readonly="on" />
+              </div>
+              <div class="col-xs-6 col-md-2" id="divChefia">
+                <label class="control-label" id="lblchefia">Chefia Imediata/Gestor</label>
+                <input class="form-control" type="text" name="chefia" id="chefia" readonly="on" />
+              </div>
+              <div class="col-xs-6 col-md-2" id="divfiscalAprov">
+                <label class="control-label" id="lblfiscalAprov">Grupo para análise fiscal</label>
+                <input class="form-control" type="text" name="fiscalAprov" id="fiscalAprov" readonly="on" />
+              </div>
+              <div class="col-xs-6 col-md-2" id="divfinancAprov">
+                <label class="control-label" id="lblfinancAprov">Grupo para análise financeira</label>
+                <input class="form-control" type="text" name="financAprov" id="financAprov" readonly="on" />
+              </div>
+              <div class="col-xs-6 col-md-2" id="divdescritor">
+                <label class="control-label" id="lbldescritor">Campo Descritor</label>
+                <input class="form-control" type="text" name="descritor" id="descritor" readonly="on" />
+              </div>
+            </div>
+
+
+            <!-- INICIO - ESTA DIV SÓ ESTARÁ DISPONÍVEL PARA O GESTOR DE CENTRO DE CUSTO POSSA FAZER A SELEÇÃO DO PONTO FOCAL -->
+            <div class="row form-group" id="dvGestorCentroCusto">
+              <div class="col-xs-12 col-md-12">
+                <label class="control-label" id="lblPontoFocal">Selecione o usuário ponto focal</label>
+                <input type="zoom" id="pontoFocal" name="pontoFocal" data-zoom="{
+                                    'displayKey':'CODUSUARIO',
+                                    'datasetId':'_RM_COLABORADORES',
+                                    'maximumSelectionLength':'1',
+                                    'placeholder':'Escolha um usuário',
+                                    'fields':[
+                                        {
+                                          'field':'COLABORADOR',
+                                          'label':'COLABORADOR'
+                                        },{
+                                          'field':'CODUSUARIO',
+                                          'label':'CODUSUARIO',
+                                          'standard':'true'
+                                        }
+                                    ]
+                                }" />
+              </div>
+            </div>
+            <br><br>
+            <!-- FIM -->
+
             <div class="row form-group">
               <div class="col-xs-6 col-md-3">
                 <label class="control-label">Coligada</label>
@@ -48,62 +106,6 @@
                 <label class="control-label">Data Emissão</label>
                 <input class="form-control" type="text" name="dataEmissao" id="dataEmissao" readonly="on" />
               </div>
-            </div>
-            <!--
-			 <div class="row form-group" id="dvCustomizada">
-              <div class="col-xs-6 col-md-2">
-                <label class="control-label" id="lblsolicitacao">Número Solicitação</label>
-                <input class="form-control" type="text" name="n_solicitacao" id="n_solicitacao" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divSolicitante">
-                <label class='control-label' id='lblsolicitante'>Solicitante</label>
-                <input class="form-control" type="text" name="solicitante" id="solicitante" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divChefia">
-                <label class="control-label" id="lblchefia">Chefia Imediata/Gestor</label>
-                <input class="form-control" type="text" name="chefia" id="chefia" readonly="on"  />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divAutorizador">
-                <label class="control-label" id="lblautorizador">Autorizador</label>
-                <input class="form-control" type="text" name="autorizador" id="autorizador" readonly="on"  />
-              </div>              
-              <div class="col-xs-6 col-md-2" id="divnivelAprov">
-                <label class="control-label" id="lblnivelAprov">Aprovação</label>
-                <input class="form-control" type="text" name="nivelAprov" id="nivelAprov" readonly="on"  />
-              </div>
-		      <div class="col-xs-6 col-md-2" id="divQtdRateio">
-                <label class="control-label" id="lblnivelAprov">Quantidade de Rateio</label>
-                <input class="form-control" type="text" name="qtdRateio" id="qtdRateio" readonly="on"  />
-              </div>
-			 </div>
--->
-
-            <div class="row form-group" id="dvCustomizada">
-              <div class="col-xs-6 col-md-2">
-                <label class="control-label" id="lblsolicitacao">Número Solicitação</label>
-                <input class="form-control" type="text" name="n_solicitacao" id="n_solicitacao" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divSolicitante">
-                <label class='control-label' id='lblsolicitante'>Solicitante</label>
-                <input class="form-control" type="text" name="solicitante" id="solicitante" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divChefia">
-                <label class="control-label" id="lblchefia">Chefia Imediata/Gestor</label>
-                <input class="form-control" type="text" name="chefia" id="chefia" readonly="on"  />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divfiscalAprov">
-                <label class="control-label" id="lblfiscalAprov">Grupo para análise fiscal</label>
-                <input class="form-control" type="text" name="fiscalAprov" id="fiscalAprov" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divfinancAprov">
-                <label class="control-label" id="lblfinancAprov">Grupo para análise financeira</label>
-                <input class="form-control" type="text" name="financAprov" id="financAprov" readonly="on" />
-              </div>
-              <div class="col-xs-6 col-md-2" id="divdescritor">
-                <label class="control-label" id="lbldescritor">Campo Descritor</label>
-                <input class="form-control" type="text" name="descritor" id="descritor" readonly="on" />
-              </div>
-            
             </div>
 
             <div class="row form-group">
@@ -281,11 +283,31 @@
                 </div>
               </div>
             </div>
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Rastreamento</h3>
+              </div>
+              <div class="panel-body">
+                  <div id="target"></div>
+              </div>
+            </div>        
+
           </div>
         </div>
       </div>
     </div>
   </form>
+
+  <script type="text/template" id="templateHistorico" class="templateHistorico"> <!--mustache, este trecho foi aplicado para que o link fosse inserido-->
+    <tr>
+        <td>{{Indice}}</td>
+        <td>{{Idmov}}</td>
+        <td>{{CodTMV}}</td>
+        <td>{{NomeTMV}}</td>        
+        <td><a href="/portal/p/CNC/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID={{Idfluig}}" target="_blank"> {{Idfluig}}</a></td>   
+    </tr>        
+  </script>
 
   <script>
     // Formata moeda
@@ -362,6 +384,69 @@
         var codcoligada = $('#CodColigada').val();
         var idmov = $('#IdMov').val();
         var idFluig = $('#IdentificadorFluig').val();
+
+        //  HERICK - Início - Table historico de movimentos
+        // Preparacao de filtro para consulta
+        var c1 = DatasetFactory.createConstraint("IDMOV", idmov, idmov, ConstraintType.MUST);
+        var constraints = new Array(c1);
+        //console.log(constraints);
+      
+        // coleta dados do dataset, utlizando filtro
+        var datasetReturned = DatasetFactory.getDataset("_RM_HISTORICOMOVIMENTO", null, constraints, null);
+        //console.log(datasetReturned);
+        
+        // Gravando valores de retorno
+        var records = datasetReturned.values;
+        //console.log(records);
+
+        // Montando uma tabela para visualização do dataset
+        mydata = [];
+        for (var index in records) {
+            var record = records[index];
+            mydata.push({
+                Indice: parseFloat(index) + 1, //Criando um contador para indice
+                Idmov: record.IDMOV,
+                CodTMV: record.CODTMV,
+                NomeTMV: record.NOMETMV,
+                Idfluig: record.IDFLUIG.replace('null',''),
+                noResults: false
+            });
+        }
+        //console.log(mydata);
+
+        // preenchimento da tabela do formulario 
+        var myTable = FLUIGC.datatable('#target', {
+            dataRequest: mydata,
+            renderContent: '.templateHistorico',
+            header: [
+                {'title': 'Indice'},
+                {'title': 'Id. Movimento'},
+                {'title': 'Cod. Movimento'},
+                {'title': 'Nome Movimento'},
+                {'title': 'Processo Fluig'}
+            ]
+        }, function(err, data) {
+            // DO SOMETHING (error or success)
+        });
+        //console.log(myTable);
+
+        //  HERICK - Fim
+
+
+
+
+        //  HERICK - Início - Chamada filtro do zoom ponto focal
+        
+        var myElem = document.getElementById('dvGestorCentroCusto');
+        //console.log(myElem);
+        var visao = window.getComputedStyle(myElem).display;
+        //console.log(visao);
+        if(visao != 'none') {
+          filtrazoom();
+          //console.log("ENTROU (visao != 'none')");
+          }
+
+        //  HERICK - Fim
 
         // recupera os dados do dataset
         var fields = new Array(codcoligada, idmov, idFluig);

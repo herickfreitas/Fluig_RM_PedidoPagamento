@@ -13,4 +13,34 @@ function displayFields(form,customHTML){
 
 	form.setShowDisabledFields(true);
 	form.setHidePrintLink(true);
+	
+	
+	/* Tratamento da div para seleção do ponto focal */
+	
+	var activity = getValue('WKNumState');
+	var gestorCCusto = 117;
+	
+	if (activity != gestorCCusto)  {
+		
+		customHTML.append("<script>");
+		customHTML.append("$(document).ready(function(){ ");
+		customHTML.append("$('#dvGestorCentroCusto').hide();");
+		customHTML.append(" });");
+		customHTML.append("</script>");
+	}
+	
+	else {
+		
+		customHTML.append("<script>");
+		customHTML.append("$(document).ready(function(){ ");
+		customHTML.append("$('#dvGestorCentroCusto').show();");
+		customHTML.append(" });");
+		customHTML.append("</script>");
+		
+	}
+	
+
+	
+	
+	
 }
