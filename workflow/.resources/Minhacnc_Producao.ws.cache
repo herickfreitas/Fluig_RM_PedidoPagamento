@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_311" class="java.beans.XMLDecoder">
+<java version="1.8.0_321" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
    <string>volume</string>
@@ -16224,6 +16224,80 @@
        <string>Usuário</string>
       </void>
      </array>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 29823</string>
+   <array class="java.lang.String" length="23">
+    <void index="0">
+     <string>chefia</string>
+    </void>
+    <void index="1">
+     <string>codcfo</string>
+    </void>
+    <void index="2">
+     <string>CodColigada</string>
+    </void>
+    <void index="3">
+     <string>codFilial</string>
+    </void>
+    <void index="4">
+     <string>codHistorico</string>
+    </void>
+    <void index="5">
+     <string>codHistoricoLongo</string>
+    </void>
+    <void index="6">
+     <string>CodPrj</string>
+    </void>
+    <void index="7">
+     <string>dataEmissao</string>
+    </void>
+    <void index="8">
+     <string>DescContrato</string>
+    </void>
+    <void index="9">
+     <string>descritor</string>
+    </void>
+    <void index="10">
+     <string>financAprov</string>
+    </void>
+    <void index="11">
+     <string>fiscalAprov</string>
+    </void>
+    <void index="12">
+     <string>gestorcc</string>
+    </void>
+    <void index="13">
+     <string>IdentificadorFluig</string>
+    </void>
+    <void index="14">
+     <string>IdMov</string>
+    </void>
+    <void index="15">
+     <string>n_solicitacao</string>
+    </void>
+    <void index="16">
+     <string>NSeqItmMov</string>
+    </void>
+    <void index="17">
+     <string>numeroMov</string>
+    </void>
+    <void index="18">
+     <string>pontoFocal</string>
+    </void>
+    <void index="19">
+     <string>possuiServico</string>
+    </void>
+    <void index="20">
+     <string>solicitante</string>
+    </void>
+    <void index="21">
+     <string>TipoAprovacao</string>
+    </void>
+    <void index="22">
+     <string>valorliquido</string>
     </void>
    </array>
   </void>
