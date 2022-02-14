@@ -1,5 +1,5 @@
-USE [corporerm]
-GO
+--USE [corporerm]
+--GO
 
 /****** Object:  View [dbo].[_Fluig_DESCRITOR_TMOV]    Script Date: 11/05/2021 18:20:57 ******/
 SET ANSI_NULLS ON

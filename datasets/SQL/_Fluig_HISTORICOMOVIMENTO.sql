@@ -1,5 +1,5 @@
-USE [Corporerm]
-GO
+--USE [Corporerm]
+--GO
 
 /****** Object:  UserDefinedFunction [dbo].[_Fluig_HISTORICOMOVIMENTO]    Script Date: 01/02/2022 16:21:16 ******/
 SET ANSI_NULLS ON

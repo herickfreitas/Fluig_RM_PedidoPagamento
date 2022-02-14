@@ -1,5 +1,5 @@
-USE [Corporerm]
-GO
+--USE [Corporerm]
+--GO
 
 /****** Object:  UserDefinedFunction [dbo].[_Fluig_ITENS_REPOSICAO]    Script Date: 31/01/2022 16:37:05 ******/
 SET ANSI_NULLS ON
